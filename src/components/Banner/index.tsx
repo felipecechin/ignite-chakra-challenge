@@ -10,7 +10,7 @@ export default function Banner() {
     <Box
       px={[10, 20]}
       w="100%"
-      h='335px'
+      h={['163px', '335px']}
       background='url(/images/background.svg) 100% no-repeat'
       backgroundSize='cover'
     >
@@ -20,8 +20,8 @@ export default function Banner() {
             as='h2'
             fontWeight={500}
             color="lightText"
-            fontSize="2.25rem"
-            lineHeight="3.375rem"
+            fontSize={["1.25rem", "2.25rem"]}
+            lineHeight={["1.875rem", "3.375rem"]}
             fontFamily="Poppins"
           >
             5 Continentes,<br /> infinitas possibilidades.
@@ -30,8 +30,8 @@ export default function Banner() {
             fontFamily="Poppins"
             fontWeight={400}
             color="lightInfo"
-            fontSize='1.25rem'
-            lineHeight='1.875rem'
+            fontSize={['0.875rem', '1.25rem']}
+            lineHeight={['1.313rem', '1.875rem']}
           >
             Chegou a hora de tirar do papel a viagem que você<br /> sempre sonhou.
           </Text>
