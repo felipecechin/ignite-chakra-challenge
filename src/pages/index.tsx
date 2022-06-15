@@ -77,9 +77,12 @@ export default function Home() {
         </Flex>
       }
       {!isWideVersion &&
-        <Flex px={["20", "20"]} py={["14", "28"]} wrap="wrap" justify="space-around">
-          <HStack>
-            <Text>
+        <Flex px={["10", "20"]} py={["14", "28"]} wrap="wrap" justify="space-around">
+          <HStack flexBasis={"50%"}>
+            <Text
+              color="#FFBA08"
+              fontSize="2xl"
+            >
               &bull;
             </Text>
             <Text
@@ -92,8 +95,11 @@ export default function Home() {
               vida noturna
             </Text>
           </HStack>
-          <HStack>
-            <Text>
+          <HStack flexBasis={"50%"} justify="end">
+            <Text
+              color="#FFBA08"
+              fontSize="2xl"
+            >
               &bull;
             </Text>
             <Text
@@ -106,8 +112,11 @@ export default function Home() {
               praia
             </Text>
           </HStack>
-          <HStack>
-            <Text>
+          <HStack flexBasis={"50%"}>
+            <Text
+              color="#FFBA08"
+              fontSize="2xl"
+            >
               &bull;
             </Text>
             <Text
@@ -120,19 +129,37 @@ export default function Home() {
               moderno
             </Text>
           </HStack>
-          <HStack>
-            <Text>
+          <HStack flexBasis={"50%"} justify="end">
+            <Text
+              color="#FFBA08"
+              fontSize="2xl"
+            >
               &bull;
             </Text>
-            <Text>
+            <Text
+              fontFamily={"Poppins"}
+              fontWeight={500}
+              fontSize="1.125rem"
+              lineHeight="1.688rem"
+              color="headingsAndText"
+            >
               clássico
             </Text>
           </HStack>
           <HStack>
-            <Text>
+            <Text
+              color="#FFBA08"
+              fontSize="2xl"
+            >
               &bull;
             </Text>
-            <Text>
+            <Text
+              fontFamily={"Poppins"}
+              fontWeight={500}
+              fontSize="1.125rem"
+              lineHeight="1.688rem"
+              color="headingsAndText"
+            >
               e mais...
             </Text>
           </HStack>
