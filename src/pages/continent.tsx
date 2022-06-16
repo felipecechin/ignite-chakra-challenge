@@ -1,4 +1,4 @@
-import { Box, Flex, SimpleGrid, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Img, SimpleGrid, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import BannerEurope from "../components/BannerEurope";
 
@@ -110,12 +110,137 @@ export default function Continent() {
         >
           Cidades +100
         </Text>
-        <SimpleGrid columns={[1, 4]} spacing={"5"} py={"10"} >
-          <Box bg='tomato' height='80px'></Box>
-          <Box bg='tomato' height='80px'></Box>
-          <Box bg='tomato' height='80px'></Box>
-          <Box bg='tomato' height='80px'></Box>
-          <Box bg='tomato' height='80px'></Box>
+        <SimpleGrid flex="1" gap="4" minChildWidth="256px" py={10} justifyItems="center">
+          <Flex direction={"column"} bg='white' width={"256px"}>
+            <Img src="/images/londres.svg" width={"100%"} />
+            <Flex justify={"space-around"} py={5} border={"1px solid rgba(255, 186, 8, 0.5)"} borderTopWidth={0} borderBottomRadius={"md"}>
+              <Flex direction={"column"} justify="space-between" minH={"14"}>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={600}
+                  fontSize={"1.25rem"}
+                  lineHeight={"1.563rem"}
+                  color="headingsAndText"
+                >
+                  Londres
+                </Text>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={500}
+                  fontSize={"1rem"}
+                  lineHeight={"1.625rem"}
+                  color="#999999"
+                >Reino Unido</Text>
+              </Flex>
+              <Flex>
+                <Img src="/images/londresIcon.svg" />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} bg='white' width={"256px"}>
+            <Img src="/images/paris.svg" width={"100%"} />
+            <Flex justify={"space-around"} py={5} border={"1px solid rgba(255, 186, 8, 0.5)"} borderTopWidth={0} borderBottomRadius={"md"}>
+              <Flex direction={"column"} justify="space-between" minH={"14"}>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={600}
+                  fontSize={"1.25rem"}
+                  lineHeight={"1.563rem"}
+                  color="headingsAndText"
+                >
+                  Paris
+                </Text>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={500}
+                  fontSize={"1rem"}
+                  lineHeight={"1.625rem"}
+                  color="#999999"
+                >França</Text>
+              </Flex>
+              <Flex>
+                <Img src="/images/parisIcon.svg" />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} bg='white' width={"256px"}>
+            <Img src="/images/roma.svg" width={"100%"} />
+            <Flex justify={"space-around"} py={5} border={"1px solid rgba(255, 186, 8, 0.5)"} borderTopWidth={0} borderBottomRadius={"md"}>
+              <Flex direction={"column"} justify="space-between" minH={"14"}>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={600}
+                  fontSize={"1.25rem"}
+                  lineHeight={"1.563rem"}
+                  color="headingsAndText"
+                >
+                  Roma
+                </Text>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={500}
+                  fontSize={"1rem"}
+                  lineHeight={"1.625rem"}
+                  color="#999999"
+                >Itália</Text>
+              </Flex>
+              <Flex>
+                <Img src="/images/romaIcon.svg" />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} bg='white' width={"256px"}>
+            <Img src="/images/praga.svg" width={"100%"} />
+            <Flex justify={"space-around"} py={5} border={"1px solid rgba(255, 186, 8, 0.5)"} borderTopWidth={0} borderBottomRadius={"md"}>
+              <Flex direction={"column"} justify="space-between" minH={"14"}>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={600}
+                  fontSize={"1.25rem"}
+                  lineHeight={"1.563rem"}
+                  color="headingsAndText"
+                >
+                  Praga
+                </Text>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={500}
+                  fontSize={"1rem"}
+                  lineHeight={"1.625rem"}
+                  color="#999999"
+                >República Tcheca</Text>
+              </Flex>
+              <Flex>
+                <Img src="/images/pragaIcon.svg" />
+              </Flex>
+            </Flex>
+          </Flex>
+          <Flex direction={"column"} bg='white' width={"256px"}>
+            <Img src="/images/amsterda.svg" width={"100%"} />
+            <Flex justify={"space-around"} py={5} border={"1px solid rgba(255, 186, 8, 0.5)"} borderTopWidth={0} borderBottomRadius={"md"}>
+              <Flex direction={"column"} justify="space-between" minH={"14"}>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={600}
+                  fontSize={"1.25rem"}
+                  lineHeight={"1.563rem"}
+                  color="headingsAndText"
+                >
+                  Amsterdã
+                </Text>
+                <Text
+                  fontFamily="Barlow"
+                  fontWeight={500}
+                  fontSize={"1rem"}
+                  lineHeight={"1.625rem"}
+                  color="#999999"
+                >Holanda</Text>
+              </Flex>
+              <Flex>
+                <Img src="/images/amsterdaIcon.svg" />
+              </Flex>
+            </Flex>
+          </Flex>
         </SimpleGrid>
       </Flex>
     </Flex>
