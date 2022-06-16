@@ -4,7 +4,8 @@ export const theme = extendTheme({
   colors: {
     lightText: '#F5F8FA',
     lightInfo: "#DADADA",
-    headingsAndText: "#47585B"
+    headingsAndText: "#47585B",
+    highlight: "#FFBA08",
   },
   styles: {
     global: {

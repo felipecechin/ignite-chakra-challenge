@@ -8,7 +8,7 @@ export default function Banner() {
 
   return (
     <Box
-      px={[10, 20]}
+      px={[5, 20]}
       w="100%"
       h={['163px', '335px']}
       background='url(/images/background.svg) 100% no-repeat'
@@ -33,7 +33,7 @@ export default function Banner() {
             fontSize={['0.875rem', '1.25rem']}
             lineHeight={['1.313rem', '1.875rem']}
           >
-            Chegou a hora de tirar do papel a viagem que você<br /> sempre sonhou.
+            Chegou a hora de tirar do papel a viagem que você sempre sonhou.
           </Text>
         </Stack>
         {isWideVersion &&
