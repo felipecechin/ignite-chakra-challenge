@@ -4,11 +4,6 @@ import BannerEurope from "../components/BannerEurope";
 
 
 export default function Continent() {
-  const isWideVersion = useBreakpointValue({
-    base: false,
-    lg: true
-  })
-
   return (
     <Flex direction={"column"}>
       <Header withPrevious={true} />
@@ -16,7 +11,7 @@ export default function Continent() {
       <SimpleGrid
         px={[5, 20]}
         py={[5, 20]}
-        columns={[1, 1, 1, 2]}
+        columns={[1, null, null, 2]}
         spacing={4}
       >
         <Box>
@@ -35,7 +30,7 @@ export default function Continent() {
           <Flex
             width={"100%"}
             height={"100%"}
-            pl={[0, 0, 0, 20]}
+            pl={[0, null, null, 20]}
             justify="space-between"
             alignItems="center"
           >
@@ -43,7 +38,7 @@ export default function Continent() {
               <Text
                 fontWeight={600}
                 color="highlight"
-                textAlign={["left", "left", "left", "center"]}
+                textAlign={["left", null, null, "center"]}
                 fontSize={["1.5rem", "3rem"]}
                 lineHeight={["2.25rem", "4.5rem"]}
                 fontFamily="Poppins"
@@ -64,7 +59,7 @@ export default function Continent() {
               <Text
                 fontWeight={600}
                 color="highlight"
-                textAlign={["left", "left", "left", "center"]}
+                textAlign={["left", null, null, "center"]}
                 fontSize={["1.5rem", "3rem"]}
                 lineHeight={["2.25rem", "4.5rem"]}
                 fontFamily="Poppins"
@@ -85,7 +80,7 @@ export default function Continent() {
               <Text
                 fontWeight={600}
                 color="highlight"
-                textAlign={["left", "left", "left", "center"]}
+                textAlign={["left", null, null, "center"]}
                 fontSize={["1.5rem", "3rem"]}
                 lineHeight={["2.25rem", "4.5rem"]}
                 fontFamily="Poppins"
